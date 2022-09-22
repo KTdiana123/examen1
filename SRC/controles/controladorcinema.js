@@ -17,8 +17,8 @@ fila.addEventListener("click",function(evento){
   peliculaSeleccionada.genero=(evento.target.parentElement.querySelector("h2").textContent) // genro 
   peliculaSeleccionada.idioma=(evento.target.parentElement.querySelector("h3").textContent) // idioma
   peliculaSeleccionada.sipnosis=(evento.target.parentElement.querySelector("p").textContent) //Sipnosis
-  peliculaSeleccionada.director=(evento.target.parentElement.querySelector("h4").textContent) // Director
-  peliculaSeleccionada.actores=(evento.target.parentElement.querySelector("h5").textContent)  // Actores 
+  peliculaSeleccionada.director=(evento.target.parentElement.querySelector(".director").textContent) // Director
+  peliculaSeleccionada.actores=(evento.target.parentElement.querySelector(".actores").textContent)  // Actores 
 
 console.log(peliculaSeleccionada)
 

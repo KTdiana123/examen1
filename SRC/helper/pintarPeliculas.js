@@ -28,7 +28,7 @@ export function pintarPeliculas(peliculas){
       
         let idioma = document.createElement("h3");
         idioma.classList.add("fw-bold");
-        idioma.textContent = "Idiomasssss: " + pelicula.idioma;
+        idioma.textContent = "Idiomas: " + pelicula.idioma;
       
         // creamos la sipnosis de cada pelicula ---  con d-none se ocualta texto largo
         let sipnosis = document.createElement("p");
@@ -36,13 +36,13 @@ export function pintarPeliculas(peliculas){
         sipnosis.textContent = "Sipnosis: "+pelicula.sinopsis;
       
         // Directores
-        let director= document.createElement("h4");
-        director.classList.add("fw-bod");
+        let director= document.createElement("p");
+        director.classList.add("director");
         director.textContent = "Director: " + pelicula.director;
       
         //actores 
-        let actores = document.createElement("h5");
-        actores.classList.add("fw-bod");
+        let actores = document.createElement("p");
+        actores.classList.add("actores");
         actores.textContent= "Actores: " + pelicula.actores;
       
         //padres y hijos
